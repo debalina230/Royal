@@ -3,11 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Allerta&display=swap');
 
 @font-face {
-    font-family: "clash";
+    font-family: "Clash";
     src: url('../font/clash/ClashGrotesk_Complete/Fonts/TTF/ClashGrotesk-Variable.ttf');
 }
 @font-face {
-    font-family: "arlita";
+    font-family: "Arlita";
     src: url('../font/arlita/ARLETA.ttf');
 }
 
@@ -25,6 +25,7 @@ body{
     background-position: center;
     background-size: cover;
     color: white;
+    /* background-color: #000000; */
     overflow-x: hidden;
 }
 li{
@@ -49,68 +50,33 @@ img{
     padding: 0 15px;
 }
 h2{
+    font-family: "Arlita";
+    font-weight: bold;
     font-size: 50px;
     margin-top: 20px;
     text-transform: capitalize;
 }
 
-
-.navbar-toggler {
-  position: relative;
-  z-index: 1099;
-  padding: 0;
+.sub-heading2{
+   display: flex;
+   justify-content:space-between;
+   align-items: center; 
 }
-
-.navbar-toggler {
-  border: none !important;
-  outline: none !important;
+.sub-content2{
+   background: linear-gradient(168deg,#F1E28C,#090601,#F1E28C);
+    border-radius: 16px;
+    padding: 1px;   
 }
-
-.navbar-toggler:focus {
-  box-shadow: none;
-}
-
-.navbar-toggler span,
-.navbar-toggler::after,
-.navbar-toggler::before {
-  transition: 0.5s linear;
-}
-
-.navbar-toggler.active::after {
-  display: none;
-}
-
-.navbar-toggler.active span {
-  transform: rotate(45deg) translateX(-7px);
-}
-
-.navbar-toggler.active::before {
-  transform: rotate(-45deg) translateX(-5px);
-}
-
-.navbar-toggler::after,
-.navbar-toggler::before {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 2px;
-  background: var(--yellow);
-}
-
-.navbar-toggler::before {
-  top: 3px;
-  left: 0;
-}
-
-.navbar-toggler::after {
-  bottom: -4px;
-  left: 0;
-}
-
-.bg-light {
-  height: 2px;
-  width: 30px;
-  background: var(--yellow) !important;
+.sub-content2 > span{
+    width: 100%;
+    height: 100%;
+    padding: 14px 58px;
+    background: #090601;
+    text-wrap: nowrap;
+    border-radius: 16px;
+    font-size: 22px;
+    text-transform: capitalize;
+    font-family: "Clash";
 }
 
 /*========
@@ -160,7 +126,12 @@ text-transform: capitalize;
 }
 .nav_icon img{
     width: 35px;
-    padding: 6px 10px 0 0;
+    padding: 5px;
+}
+.nav_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav_list .active{
@@ -193,10 +164,79 @@ text-transform: capitalize;
   flex-direction: row !important;
 }
 
-.navbar-toggler{
-   margin-left: auto;
+
+   .nav_icon2 img{
+    width: 35px;
+     padding:4px;
+    display: none;
+   }
+   .nav_icon2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  margin-left: auto;
    margin-right: 10px;
-}  
+   }
+
+   .navbar-toggler {
+  position: relative;
+  z-index: 1099;
+  padding: 0;
+}
+
+.navbar-toggler {
+  border: none !important;
+  outline: none !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler.active span,
+.navbar-toggler::after,
+.navbar-toggler::before {
+  transition: 0.5s linear;
+}
+
+.navbar-toggler.active::after {
+  display: none;
+}
+
+.navbar-toggler.active span {
+  transform: rotate(45deg) translateX(-7px);
+}
+
+.navbar-toggler.active::before {
+  transform: rotate(-45deg) translateX(-5px);
+}
+
+.navbar-toggler::after,
+.navbar-toggler::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background: var(--yellow);
+}
+
+.navbar-toggler::before {
+  top: 3px;
+  left: 0;
+}
+
+.navbar-toggler::after {
+  bottom: -4px;
+  left: 0;
+}
+
+.bg-light {
+  height: 2px;
+  width: 30px;
+  background: var(--yellow) !important;
+}
+
+
 /*========== 
 banner
 ============= */
@@ -210,7 +250,7 @@ banner
     padding-bottom: 200px;
 }
 h1{
-    font-family: "arlita";
+    font-family: "Arlita";
     max-width: 700px;
     width: 100%;
     font-size: 80px;
@@ -218,7 +258,7 @@ h1{
     text-transform: capitalize;
 }
 .ban_para{
-font-family: "clash";
+font-family: "Clash";
  max-width: 600px;
  width: 100%;  
  font-size: 20px; 
@@ -250,6 +290,7 @@ font-family: "clash";
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
 .heading_bt{
     border: 1px solid var(--yellow);
     border-radius: 8px;
@@ -271,15 +312,17 @@ font-family: "clash";
 .sub-heading > .sub-content{
     height: 100%;
     width: 100%;
+    font-size: 20px;
     background: #090601;
     border-radius: 16px;
     display: flex;
     align-items:center;
     justify-content: center;
+    font-family: "Clash";
 }
 
 .title2{
-     font-family: "arlita";
+     font-family: "Arlita";
     font-weight:bold;
     max-width: 700px;
     width: 100%;
@@ -307,7 +350,7 @@ font-family: "clash";
     text-align: center;
 }
 .private_jets h2{
-    font-family: "arlita";
+    font-family: "Arlita";
   font-weight:bold;
    max-width: 650px;
     width: 100%;
@@ -317,6 +360,7 @@ font-family: "clash";
     padding-top: 25px;  
 }
 .jet_para{
+    font-family:"Clash";
     max-width: 479px;
     width: 100%;
     font-size: 22px;
@@ -324,7 +368,7 @@ font-family: "clash";
     margin-top: 10px;
     line-height: 1.2;
 }
-.pv_jet{
+/* .pv_jet{
     position: relative;
 }
 
@@ -347,7 +391,7 @@ font-family: "clash";
  }
  .capacity h4{
  font-size: 30px;
- }
+ } */
  .jet_bt a{
     border-radius: 50px;
     color: white;
@@ -360,12 +404,97 @@ font-family: "clash";
  .jet_bt a:hover{
     color: var(--yellow);
  }
+ .jet_bt2{
+    margin-top: 120px;
+ }
  .jet_col{
      width: 30.75%;
      margin: 0 auto;
-    margin-top: 60px;
+    /* margin-top: 60px; */
  }
  
+ .card > img{
+    border-radius: 26px;
+   /* max-width: 450px; */
+}
+.card{
+    /* background-color: black; */
+    text-align: center;
+    border: none;
+    max-width:451px;
+    height: 554px;
+    position: relative;
+    background: transparent;
+    margin-top: 100px;
+}
+.card-content{
+    position: absolute;
+    background: black;
+    bottom: -60px;
+    left: 0;
+    right: 0;
+    padding: 35px 0 77px;
+    text-align: center;
+    color: white;
+    border-radius: 26px;
+    border: 1px solid rgba(219,199,97,37%);
+}
+.card-content > h3{
+    font-family: "Arlita";
+    font-size: 30px;
+    font-weight: bold;
+}
+.card-content > p{
+    font-family:"Clash";
+    font-size: 18px;
+}
+.card-content > a{
+    color: white;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+    border: 1px solid rgba(219,199,97,37%);
+    border-radius: 36px 36px 0 0;
+    position: relative;
+}
+.card-content > a > span{
+    padding: 16px 26px;
+    border: 1px solid rgba(219,199,97,37%);
+    border-radius: 50px;
+    font-family:Arial, sans-serif;
+    box-shadow: 0 30px 0 black;   
+}
+
+.card-content a::after{
+content: "";
+height: 36px;
+width: 36px;
+background: black;
+position: absolute;
+bottom: -1.5px;
+right: -36px;
+border: 1px solid rgba(219,199,97,37%);
+border-width:0 0 1px 1px;
+border-radius: 0 0 0 22px;
+box-shadow:-8px 16px 0 black ;
+pointer-events: none;
+}
+
+.card-content a::before{
+content: "";
+height: 36px;
+width: 36px;
+background: black;
+position: absolute;
+bottom:-2px;
+left: -36px;
+ border: 1px solid rgba(219,199,97,37%);
+ border-width:0 1px 1px 0;
+ border-radius: 0 0 22px 0;
+ box-shadow:8px 16px 0 black ;
+ pointer-events: none;
+}
 
  /*===========
   Services
@@ -477,7 +606,9 @@ font-family: "clash";
     text-align: center;
 }
 .team h2{
-   max-width: 715px;
+    font-family: "Arlita";
+    font-weight: bold;
+   max-width: 500px;
     width: 100%;
     font-size: 60px;
     line-height: 1;
@@ -565,9 +696,11 @@ font-family: "clash";
    }
 
    .testimonial h2{
+    font-family: "Arlita";
+    font-weight: bold;
      max-width: 615px;
     width: 100%;
-    font-size: 55px;
+    font-size: 59px;
     line-height: 1;
     margin: 0 auto;
     /* text-align: center; */
@@ -804,7 +937,12 @@ font-family: "clash";
     backdrop-filter: blur(20px);
     padding-top: 70px;
 }
-
+.nav_icon2 img{
+    display: block;
+}
+.nav_icon{
+    display: none;
+}
 .capacity h4{
     font-size: 18px;
 }
@@ -892,6 +1030,10 @@ h2{
  }
  .jet_col,.ser_col,.ser_col2,.testi_col,.testi_col2{
    width: 100%;
+ }
+ .card{
+     margin: 0 auto;
+     margin-top: 100px;
  }
  .service{
     text-align: center;

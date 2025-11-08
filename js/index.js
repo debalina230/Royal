@@ -21,10 +21,9 @@
       },
     });
 
-    const navbarToggler = document.querySelector(".navbar-toggler");
+const navbarToggler = document.querySelector(".navbar-toggler");
 console.log(navbarToggler);
 let open = false;
-
 navbarToggler.addEventListener("click", () => {
   navbarToggler.classList.toggle("active");
 });
