@@ -10,7 +10,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <!-- css link -->
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- fancybox css cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
 
     <link
       rel="stylesheet"
@@ -108,9 +111,6 @@
       <!-- Aviation club -->
       <section class="club text-center">
         <div class="container">
-          <!-- <div>
-            <a class="heading_bt" href="#">hello dreamer!</a>
-          </div> -->
            <div class="sub-heading">
             <div class="sub-content">hello dreamer!</div>
           </div>
@@ -118,10 +118,15 @@
             your perfect day with
             <span class="jets"> royal aviation club </span>
           </h2>
-          <div>
-            <figure class="club_img">
-              <img src="./images/Group 24 (2).png" alt="club_img" />
-            </figure>
+          <div class="club-content">
+          <div class="club_img">
+              <img src="./images/Mask group (10).svg" alt="club_img" />
+           </div>
+           <div class="play-btn">
+            <a data-fancybox="gallery" href="https://www.youtube.com/watch?v=hzqYcE1ZNE0">
+              <img src="./images/Polygon 1 (1).svg" alt="Polygon">
+            </a>
+          </div>
           </div>
         </div>
       </section>
@@ -1002,14 +1007,21 @@
                 /></a>
               </li>
             </ul>
-            <a href="#" class="city"><span>Delhi | Mumbai | Bengaluru | Dubai</span></a>
+            
+            <ul class="city">
+            <li><a href="#">Delhi <span style="color: yellow;">|</span></a></li>
+            <li><a href="#">Mumbai <span style="color: yellow;">|</span></a></li>
+            <li><a href="#">Bengaluru <span style="color: yellow;">|</span></a></li>
+            <li><a href="#">Dubai</a></li>
+           </ul>
+          
           </div>
         </div>
         <hr style="color: yellow" />
-        <p class="last_para">
-          © 2014-2024 All right reserved by royal Aviation Services Private
+        <span class="last_para">
+          © 2014-2024 All right reserved by <a href="./index.html">royal Aviation</a> Services Private
           Limited
-        </p>
+        </span>
       </div>
     </div>
 
@@ -1021,9 +1033,11 @@
     <script src="./boostrap/js/bootstrap.min.js"></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+ <!-- js cdn -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./js/index.js"></script>
+    <!-- fancybox js cdn -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
   </body>
 </html>
 
