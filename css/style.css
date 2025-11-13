@@ -42,6 +42,7 @@ img{
 }
 :root{
     --yellow:#DBC761;
+    --black:#090906;
 }
 .container{
     max-width:1520px;
@@ -83,11 +84,11 @@ h2{
  navber
  ========= */
 .navbar{
-    background-color: rgba(0, 0, 0, 0.875);
+    background-color: var(--black);
 }
 .nav_brand img{
     /* max-width: 169px; */
-    width: 70px;
+    width: 100px;
 }
 .nav_list{
     font-family: "clash";
@@ -241,7 +242,7 @@ text-transform: capitalize;
 banner
 ============= */
 .banner{
-    background-color: rgba(0, 0, 0, 0.581);
+   background-color: var(--black);
     background-image: url('../images/Mask\ group\ \(33\).png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -286,7 +287,7 @@ font-family: "Clash";
  Aviation club
  ============== */
 .club{
-    background-color: rgba(0, 0, 0, 0.733);
+    background-color: var(--black);
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -370,7 +371,7 @@ font-family: "Clash";
  Private jets
  ========== */
 .private_jets{
-     background-color: rgba(0, 0, 0, 0.789);
+    background-color: var(--black);
     padding-bottom: 100px;
     text-align: center;
 }
@@ -393,30 +394,6 @@ font-family: "Clash";
     margin-top: 10px;
     line-height: 1.2;
 }
-/* .pv_jet{
-    position: relative;
-}
-
- .jets_img img{
-    max-width: 450px;
-    border-radius: 20px; 
- }
- .jets_img{
-    text-align: center;
- }
- .capacity{
-  padding-top: 10px;
-  border: 1px solid var(--yellow);
-  border-radius: 20px;
-  text-transform: capitalize;
-  margin-top: -115px;
-  background-color: black;
-  position: relative;
-  z-index: 10;
- }
- .capacity h4{
- font-size: 30px;
- } */
  .jet_bt a{
     border-radius: 50px;
     color: white;
@@ -525,7 +502,7 @@ left: -36px;
   Services
   ============= */
 .service{
-     background-color: rgba(0, 0, 0, 0.874);
+     background-color: var(--black);
     padding-bottom: 50px;
 }
  .ser_para{
@@ -582,7 +559,7 @@ left: -36px;
  Special offer
  ============ */
 .offer{
-     background-color: rgba(0, 0, 0, 0.944);
+    background-color: var(--black);
     padding-top: 50px;
     padding-bottom: 50px;
     text-transform: capitalize;
@@ -591,7 +568,7 @@ left: -36px;
 
 .offer_row{
     display: flex;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     align-items: center;
     flex-direction: row;
     margin-top: 40px;
@@ -613,19 +590,26 @@ left: -36px;
 }
 .offer_row2{
   display: flex;
-    align-items: center;
-    flex-direction: row;
-    margin-top: 30px;   
-   border: 1px solid  #352c03;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 30px;   
+  border: 1px solid  #352c03;
  border-radius: 50px;
  padding: 10px 0;
 }
+
+.scroll-table{
+     min-width: 1250px;
+      width: 100%;
+}
+
+
 
 /*===========
  Our Team
  ============ */
 .team{
-     background-color: rgba(0, 0, 0, 0.934);
+    background-color: var(--black);
     padding-top: 50px;
     padding-bottom: 50px;
     text-align: center;
@@ -675,7 +659,7 @@ left: -36px;
      Testimonials
      =============== */
     .testimonial{
-         background-color: rgba(0, 0, 0, 0.815);
+         background-color: var(--black);
         padding-top: 50px;
         padding-bottom: 50px;
         text-transform: capitalize;
@@ -772,7 +756,7 @@ left: -36px;
    Lifestyle
    ================ */
    .lifestyle{
-     background-color: rgba(0, 0, 0, 0.859);
+    background-color: var(--black);
     padding-top: 50px;
     padding-bottom: 50px;
     text-transform: capitalize;
@@ -843,7 +827,7 @@ left: -36px;
    footer
    =============== */
    .footer{
-    background-color: rgba(0, 0, 0, 0.844);
+   background-color: var(--black);
     padding-top: 50px;
     padding-bottom: 20px;
     text-transform: capitalize;
@@ -884,7 +868,7 @@ left: -36px;
     color: var(--yellow);
    }
    .footer ul li a{
-    padding-top: 18px;
+    margin-top: 18px;
     font-size: 18px;
      color: rgb(160, 158, 158);
    }
@@ -926,14 +910,19 @@ left: -36px;
    .city li a{
    font-family: "Clash";
    font-size: 25px !important;
-   margin-top: 15px;
+   /* margin-top: 15px; */
    }
    .city li{
     display: inline-block;
    }
 
  @media screen and (max-width:1399px) {
-
+     .team1{
+    min-height: 640px;
+}
+.scroll-table-wrap{
+    overflow-x: scroll;
+ }
     .tes-para2{
         margin-top: 10px;
     }
@@ -943,8 +932,14 @@ left: -36px;
 .testimonial h2{
     font-size: 35px;
 }
+.subs{
+    margin-top: 10px;
+ }
   .fot1 .social_icon a{
     margin-top: 30px;
+    margin-left: 5px;
+    height: 30px;
+    width: 30px;
  }
  
 }  
@@ -956,6 +951,10 @@ left: -36px;
    /* .testi_clint p{
     font-size: 10px;
    } */
+.team1{
+    min-height: 600px;
+}
+  
     .testi_col,.testi_col2{
         width: 50%;
     }
@@ -991,15 +990,19 @@ h2{
 .jet_col,.ser_col,.ser_col2{
     width: 50%;
 }
-.team1{
+  .team1{
     min-height: 640px;
 }
+
 /* .testimonial h2{
     font-size: 35px;
 } */
 .testi_clint p{
     font-size: 12px;
 }
+.testi_col{
+    margin-top: 20px;
+ }
 /* .testi_para p{
     font-size: 15px;
 } */
@@ -1022,22 +1025,29 @@ h2{
 .mainfot{
     flex-direction: column;
 }
- .fot2,.fot3,.fot4,.fot5{
+ .fot2,.fot3,.fot4,.fot5,.testi_col,.testi_col2{
     width: 100%;
  }
- .fot_para{
+ .footer,.fot_para{
+    text-align: center;
     margin: 0 auto;
+ }
+ .fot_para{
+    margin-bottom: 15px;
  }
 .fot1{
     text-align: center;
     margin: 0 auto;
 }
  .social_icon{
+    margin-left: 0;
     text-align: center;
  }
- .last_para{
-    text-align: center;
- } 
+  .fot1 .social_icon a{
+    height: 40px;
+    width: 40px;
+ }
+  
 
 }
 
@@ -1064,7 +1074,7 @@ h2{
  .jet_bt a{
     margin-top: 0;
  }
- .jet_col,.ser_col,.ser_col2,.testi_col,.testi_col2{
+ .jet_col,.ser_col,.ser_col2{
    width: 100%;
  }
  .card{
@@ -1081,17 +1091,8 @@ h2{
  .team h2{
     font-size: 35px;
  }
- .testi_col{
-    margin-top: 20px;
- }
-
- .offer_col{
-    margin: 0;
-}
- .offer_row2,.offer_row{
-    flex-direction: column;
- }
  
+
  .col{
  padding-top: 10px;
  }
@@ -1101,14 +1102,14 @@ h2{
  .sign a,.ban_bt a{
     padding: 8px 15px;
  }
- .subs{
-    margin-top: 10px;
- }
  
 }
 @media screen and (max-width:489px){
 .testi_head2{
     font-size: 15px;
+}
+.city li a{
+    font-size: 20px !important;
 }
 
 }
