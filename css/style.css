@@ -872,24 +872,31 @@ left: -36px;
     font-size: 18px;
      color: rgb(160, 158, 158);
    }
-   /* .footer input{
-    display:-moz-inline-stack;
-   } */
-   .mail{
-    background-color:black;
-    padding:10px 80px 10px 10px;
-    border: 1px solid var(--yellow);
-    border-radius: 10px;
-    text-transform: capitalize;
-   }
-   .subs{
-    background-color: var(--yellow);
-    padding: 8px 15px;
-    border-radius: 10px;
+
+   .footer-form .footer-email {
+    padding: 15px 80px 15px 31px;
+    border: 1px solid rgba(221, 202, 103, 0.5);
+    outline: none;
+    border-radius: 20px;
+    background: transparent;
    }
 
+   .footer-form .subs {
+    position: absolute;
+    top: 5px;
+    right: 6px;
+    padding: 9px 13.5px;
+    color: #090906;
+    font-size: 18px;
+    font-weight: 500;
+    background: var(--yellow);
+    border-radius: 16px;
+    transition: 0.4s ease-in-out;
+}
+
      .social_icon{
-      margin-left:22%;  
+      /* margin-left:22%;   */
+      text-align: end;
    }
    .fot1 .social_icon a{ 
     display: inline-flex;
@@ -910,10 +917,12 @@ left: -36px;
    .city li a{
    font-family: "Clash";
    font-size: 25px !important;
-   /* margin-top: 15px; */
    }
    .city li{
     display: inline-block;
+   }
+   .city{
+    text-align: end;
    }
 
  @media screen and (max-width:1399px) {
@@ -932,9 +941,7 @@ left: -36px;
 .testimonial h2{
     font-size: 35px;
 }
-.subs{
-    margin-top: 10px;
- }
+
   .fot1 .social_icon a{
     margin-top: 30px;
     margin-left: 5px;
@@ -948,9 +955,6 @@ left: -36px;
  .offer_bt a{
  padding: 8px;
 } 
-   /* .testi_clint p{
-    font-size: 10px;
-   } */
 .team1{
     min-height: 600px;
 }
@@ -958,9 +962,10 @@ left: -36px;
     .testi_col,.testi_col2{
         width: 50%;
     }
-    .fot2,.fot3,.fot4,.fot5{
+    /* .fot2,.fot3,.fot4,.fot5{
     width: 25%;
- }
+ } */
+  
  
  
 }
@@ -1028,7 +1033,7 @@ h2{
  .fot2,.fot3,.fot4,.fot5,.testi_col,.testi_col2{
     width: 100%;
  }
- .footer,.fot_para{
+ .footer,.fot_para,.city{
     text-align: center;
     margin: 0 auto;
  }
